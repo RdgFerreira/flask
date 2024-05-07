@@ -120,7 +120,7 @@ class DispatchingJinjaLoader(BaseLoader):
                 for template in loader.list_templates():
                     result.add(template)
 
-        return list(result)
+        return None
 
 
 def _render(app: Flask, template: Template, context: dict[str, t.Any]) -> str:
